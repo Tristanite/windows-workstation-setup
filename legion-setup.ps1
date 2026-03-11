@@ -14,22 +14,25 @@ Write-Host "Installing required software..."
 
 choco install `
     git `
-    python `
     vscode `
     qgis `
     7zip `
     discord `
     dbeaver `
     firefox `
-    google-drive `
+    googledrive `
     steam `
     googleearthpro `
     viber `
     qbittorrent `
-    epicgames `
+    epicgameslauncher `
     zoom `
     microsoft-teams `
     wiztree `
     -y
+
+winget install 9NQ7512CXL7T
+
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 Write-Host "Setup complete!"
